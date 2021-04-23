@@ -1,0 +1,39 @@
+----- Classification -----
+
+
+1. Definition: 
+
+-> A supervised learning approach.
+-> Categorize some unknown items into a discrete set of categories or "classes".
+-> The target attribute is a categorical variable.
+
+
+2. How does classification work?
+
+-> Determines the class label for an unlabeled test case
+-> Can be both binary or multi-class
+
+
+3. Use cases
+
+-> Churn, response to something, category customer belongs etc.
+
+4. Classification Algorithms
+
+-> Decision Trees
+-> Naive Bayes
+-> Linear Discriminant Analysis
+-> k-Nearest Neighbor
+-> Logistic Regression
+-> Neural Networks
+-> Support Vector Machines (SVM)
+
+
+
+----------------------------------- // -------------------------------------
+
+
+
+
+
+ 
