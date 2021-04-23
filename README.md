@@ -1,2 +1,2 @@
-# Classification-ML
-A repo to include some studies about Classificatoin models
+# KNN-ML
+A repo to include some studies about The Classificatoin model KNN
