@@ -3,7 +3,67 @@
 
 1. Definition: 
 
+-> K-Nearest Neighbors: find the closest group of neighbors and classify based on them. 
 
+-> Classify cases based on their similarity to other cases
+
+
+
+2. How it works:
+
+a) You have to pick a value for K, the number of neighbors
+-> Use always an odd number for K so you can use the majority rule. Ex: 3 out of 5 say yes to something, so the classif. is yes.
+
+b) Calculate the distance of unknown case from all cases
+-> Can be done using euclidian distance or other type of distance calculation
+
+c) Select the K-Observations in the training data that are nearest to the unknown data point.
+
+d) Predict the response of the unknow data point using the most popular response value from the k-nearest neighbors.
+
+
+
+3. How to calculate the similarity between two data points
+
+a) Euclidian Distance = sqr(sum(x1-x2)^2)
+
+-> remember to normalize the values to get the right distance
+
+b) Many other types of distance calculation
+
+
+
+4. How to find the best K
+
+-> A low value of K cause overfitting, the model is too complex and it does not generalize well
+-> A high value can create an overgeneralized model which is also not good.
+
+-> Start with K equals to 1 and check the accuracy, then increases the K and check which one gets the best accuracy, 
+most of the time there is a high point where the best K stands and then the accuracy curve goes down
+
+
+5. Evaluation Metrics
+
+-> Compare the actual values with the predicted labels
+
+a) Jaccard index
+
+-> size of the intersection divided by the size of the union of two label sets (the predicted and the actual ones)
+
+b) F1-Score
+
+-> Uses confusion matrix: calculate the number of True Positive (TP), True Negative (TN), False Positive (FP) and False Negative (FN).
+
+-> Precision: TP/(TP+FP)
+-> Recall: TP/(TP+FN)
+
+-> Harmonic average of the precision and the recall: 2x(prcxrec)/(prc+rec)
+
+-> Avg accuracy -> the avg of the f1-score for each label
+
+c) Log Loss
+
+-> The classifier with the lower log loss has better accuracy
 
 ----------------------------------- // -------------------------------------
 
