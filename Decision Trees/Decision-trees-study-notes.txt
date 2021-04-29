@@ -1,7 +1,53 @@
 ----- Decision Trees -----
 
+1. How to build a decision tree:
+
+-> Decision trees are built by splitting the raining set into distinct nodes
+-> You create nodes based on tests you make on the dataset. You are trying to divide the dataset between what you want to classify
+
+-> Each node corresponds to a test, each brach corresponds to a result of the test and each leaf node assigns a classification
+
+a) Step-by-step: 1- Choose an attribute from your dataset.
+		 2- Calculate the significance of attribute in splitting of data.
+		 3- Split data based on the value of the best attribute.
+		 4- Go to step 1.
 
 
+
+2. Building decision trees:
+
+-> Use recursive partition to split the data.
+
+-> Choose the attribute that split the data into more pure pieces. (without the mix of the 2 classifications)
+
+
+a) Purity
+
+PURE = 100% sure that all the individuals in the leaf are from the same class
+
+-> Purity is calculated by the entropy
+
+
+b) Entropy
+
+Entropy = measure of randomness in the data -> or the uncertainty
+
+-> If it is completely homogeneous ENTROPY = 0; if the data is equally divided then the ENTROPY = 1;
+
+-> Calculated by the probability of a certain class * log of this probability 
+-> E = -p(A)log(p(A)) - p(B)log(p(B))
+
+
+c) Information Gain
+
+-> Is the information that can increase the level of certainty after splitting
+-> opposite to entropy -> when entropy decreases, info gain increases
+
+
+
+3. Important observations of the lab:
+
+-> Sklearn Decision Trees do not handle categorical variables
 
 ----------------------------------- // -------------------------------------
 
