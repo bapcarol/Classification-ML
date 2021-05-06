@@ -1,7 +1,26 @@
 ----- Logistic Regression -----
 
+1. What is Logistic Regression?
+
+-> Is a classification algorithm for categorical variables
+-> Use one or more independent variable to predict the dependent variable
+-> Predict a binary categorical field that can be coded between zero or one
+-> All the independent variables are coded to become numeric using dummies or something else
 
 
+2. What kind of problems can be solved with LR?
+
+-> Probability of a person having a heart attack
+-> mortality of injured patients
+-> failed of a given process or product
+-> propensity to purchase a product
+
+
+3. Situations which you can use LR?
+
+-> When your target field in your data is categorical and binary (yes/no; 0/1; true/false)
+-> If you need probabilistic results
+-> When you need a linear decision boundary -> divide dataset between the two classes
 
 
 ----------------------------------- // -------------------------------------
